@@ -6,8 +6,8 @@
 // products so you can preview the design before connecting Supabase.
 // ---------------------------------------------------------------------------
 export const CONFIG = {
-  supabaseUrl: "https://YOUR_PROJECT_REF.supabase.co",
-  supabaseAnonKey: "YOUR_SUPABASE_ANON_KEY",
+  supabaseUrl: "https://qyclijtweoxcjvyluill.supabase.co",
+  supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF5Y2xpanR3ZW94Y2p2eWx1aWxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI2ODA4MDgsImV4cCI6MjEwODI1NjgwOH0.e-vN7cQsCrJYWR2NsLKwq8wg1dd_HcLZwj33I6cF76Q",
 
   // Public site URL, used for canonical links and the sitemap. Leave empty to use the current domain.
   siteUrl: "",
