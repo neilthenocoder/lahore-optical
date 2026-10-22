@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin.html
+
+# Replace [SITE_DOMAIN] with your live domain
+Sitemap: https://[SITE_DOMAIN]/sitemap.xml
+Sitemap: https://[SITE_DOMAIN]/sitemap-products.xml

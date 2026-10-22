@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------------------
+# Lahore Optical — pretty URLs (Netlify 200 rewrites keep the address bar URL).
+# category.html / product.html read the category and slug from the path,
+# so /frames behaves exactly like /category.html?type=frames.
+# Static files always win over these rules (they are not forced).
+# ---------------------------------------------------------------------------
+
+# Pages
+/admin                   /admin.html       200
+/try-on                  /try-on.html      200
+/privacy                 /privacy.html     200
+/terms                   /terms.html       200
+
+# Product sitemap from Supabase (Netlify Function; needs a Git or CLI deploy)
+/sitemap-products.xml    /.netlify/functions/sitemap   200
+
+# Category listings  →  /category.html?type=<slug>
+/frames                  /category.html?type=frames           200
+/sunglasses              /category.html?type=sunglasses       200
+/lenses                  /category.html?type=lenses           200
+/contact-lenses          /category.html?type=contact-lenses   200
+/collections/:slug       /category.html?collection=:slug      200
+
+# Product detail  →  /product.html?slug=<slug>
+/frames/:slug            /product.html?slug=:slug   200
+/sunglasses/:slug        /product.html?slug=:slug   200
+/lenses/:slug            /product.html?slug=:slug   200
+/contact-lenses/:slug    /product.html?slug=:slug   200
+
+# Added a new category in /admin? Copy the two lines above for its slug, e.g.
+# /kids-eyewear          /category.html?type=kids-eyewear   200
+# /kids-eyewear/:slug    /product.html?slug=:slug           200
+
+# Everything else → real 404 status with the custom page
+/*                       /404.html   404

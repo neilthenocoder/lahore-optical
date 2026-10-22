@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Core pages. Replace [SITE_DOMAIN] with your live domain.
+     Products: /sitemap-products.xml (Netlify Function), or download a full
+     sitemap from /admin → Products → "Download sitemap.xml" and replace this file. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://[SITE_DOMAIN]/</loc><priority>1.0</priority></url>
+  <url><loc>https://[SITE_DOMAIN]/frames</loc><priority>0.9</priority></url>
+  <url><loc>https://[SITE_DOMAIN]/sunglasses</loc><priority>0.9</priority></url>
+  <url><loc>https://[SITE_DOMAIN]/lenses</loc><priority>0.9</priority></url>
+  <url><loc>https://[SITE_DOMAIN]/contact-lenses</loc><priority>0.9</priority></url>
+  <url><loc>https://[SITE_DOMAIN]/try-on</loc><priority>0.7</priority></url>
+  <url><loc>https://[SITE_DOMAIN]/privacy</loc></url>
+  <url><loc>https://[SITE_DOMAIN]/terms</loc></url>
+</urlset>
